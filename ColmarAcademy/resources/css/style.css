@@ -1,0 +1,395 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  width: 100%
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid WhiteSmoke;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+header nav {
+  display: inline-block;
+  padding-right: 24px;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+div {
+  display: block;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 4;
+  padding-left: 30px;
+}
+#colmar {
+  color: #9DBFE2;
+}
+#academy {
+  color: #EFB821;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 480px){
+  #colmar , #academy {
+    display: none;
+  }
+  #sign-in  {
+    display: none;
+  }
+}
+
+.banner {
+  background-color: #9DBFE2;
+  display: flex;
+}
+.banner img {
+  height: 60%;
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+.banner .start {
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+  width: 40%;
+}
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #454545;
+}
+.banner h3 {
+  font-size: 1.5rem;
+  margin-top: 1.73rem;
+}
+.button {
+  display: flex;
+  background-color: #EFB821;
+  height: 3rem;
+  width: 23.75rem;
+  margin-top: 45px;
+  align-items: center;
+}
+.button span {
+  display: inline-block;
+  color: WhiteSmoke;
+  padding: .5rem 8.44rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width:480px){
+  .banner {
+    display: table;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .banner .start {
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .banner h1 {
+    padding: 2rem 0rem;
+  }
+  .banner h3 {
+    margin-top: 0rem;
+}
+  .button {
+    margin: 1.5rem 0rem 2rem 0rem;
+  }
+}
+
+.left {
+  display: inline-block;
+  width: 60%;
+  padding: 32px 24px;
+  float: left;
+}
+
+@media only screen and (max-width: 480px){
+  .left {
+    display: none;
+  }
+}
+
+.left .content {
+  padding: 32px 0px;
+}
+
+.left .content h2 {
+  padding-bottom: 24px;
+  vertical-align: middle;
+}
+
+.quote {
+  padding-bottom: 30px;
+}
+
+.author {
+  font-weight: bold;
+  color: #EFB821;
+}
+
+.right {
+  display: inline-block;
+  width: 40%;
+  padding: 2rem 1rem;
+  border-left: 1px solid #9DBFE2;
+  float: right;
+}
+
+@media only screen and (max-width:480px){
+  .right {
+    width: 100%;
+  }
+}
+
+#about {
+  width: 100%;
+  display: table;
+  padding: 16px 0px;
+}
+
+#about .image-container {
+  width: 35%;
+  float: left;
+  padding-left: 16px;
+}
+
+#about .content {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 16px;
+}
+
+#about p {
+  padding: 8px 0px;
+}
+
+#tracks1 {
+  display: flex;
+  background-color: #9DBFE2;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 0rem 2rem 2rem;
+}
+
+#tracks2 {
+  padding: 2rem 0rem 2rem 2rem;
+  display: flex;
+  background-color: #9DBFE2;
+  justify-content: space-between;
+  position: relative;
+}
+
+#learning {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0rem;
+  background-color: #9DBFE2;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:480px){
+  #tracks1 {
+    display: table;
+    padding: 1rem 1rem;
+  }
+
+  #tracks2 {
+    padding: 1rem 1rem;
+    display: table;
+
+  }
+
+  .track {
+    padding: 1rem;
+    display: table;
+    background-color: #9DBFE2;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.track {
+  background-color: WhiteSmoke;
+  display: inline-block;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.track .image-container {
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+@media only screen and (max-width:480px){
+  .track .image-container {
+    display: none;
+  }
+
+  .track .content p {
+    display: none;
+  }
+  .track .content h3 {
+    margin: 0rem 0rem;
+  }
+}
+
+.track .content {
+  padding: 0px 16px;
+}
+
+.track .content p {
+  padding: 8px 0px;
+  font-weight: lighter;
+}
+
+.track .content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#thesis-exhibit {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 32px 0px;
+  background-color: #F5F5F5;
+  font-weight: bold;
+}
+
+#presentation {
+  display: inline-block;
+  width: 60%;
+  float: left;
+  background-color: #F5F5F5;
+  padding: 0px 24px;
+}
+
+video {
+  width: 100%;
+}
+
+#presentation .content {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#presentation .content p {
+  padding-top: 8px;
+}
+
+.exhibit {
+  display: inline-block;
+  width: 40%;
+  border-left: 1px solid #9DBFE2;
+  float: right;
+}
+.thesis {
+  width: 100%;
+  display: table;
+  padding: 16px 0px;
+}
+
+.thesis .image-container {
+  width: 35%;
+  float: left;
+  padding-left: 16px;
+}
+
+.thesis .content {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.thesis p {
+  padding: 8px 0px;
+  color: #506172;
+}
+
+@media only screen and (max-width: 480px){
+  .exhibit {
+    display: none;
+  }
+
+  #presentation {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+  video {
+    padding: 0rem 0rem 1.5rem 0rem;
+    width: 100%;
+  }
+  #presentation .content {
+    display: none;
+  }
+  footer p {
+   display: table;
+}
+  footer nav {
+    display: none;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid WhiteSmoke;
+  background-color: #EFB821;
+}
+
+footer p {
+  padding-left: 1.5rem;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 40.93rem;
+  padding-right: 1.5rem;
+}
